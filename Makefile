@@ -1,4 +1,4 @@
 .PHONY: serve
 
 serve:
-	dev_appserver.py .
+	~/go_appengine/dev_appserver.py .

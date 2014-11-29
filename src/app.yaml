@@ -9,7 +9,7 @@ handlers:
   static_files: static/index.htm
   upload: static/index.htm
 
-- url: /app/.*
+- url: /api-1/.*
   script: snip.main.application
 
 - url: /

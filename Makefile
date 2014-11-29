@@ -5,4 +5,4 @@ dev-requirements:
 	venv/bin/pip install nodeenv
 
 serve:
-	~/go_appengine/dev_appserver.py --log_level debug .
+	~/go_appengine/dev_appserver.py --log_level debug src/

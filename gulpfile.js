@@ -6,10 +6,12 @@ var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var tap = require('gulp-tap');
 var reactify = require("reactify");
+var es6ify = require("es6ify");
 
 gulp.task("js", function() {
     return browserify({entries: ["./src/static/jsx/main.jsx"], debug: true})
         .transform(reactify)
+        .transform(es6ify.configure(/\.jsx?$/))
         .bundle()
         .pipe(source("main.js"))
         .pipe(gulp.dest("src/genfiles/"));

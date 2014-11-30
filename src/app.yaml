@@ -6,11 +6,11 @@ threadsafe: true
 
 handlers:
 - url: /$
-  static_files: static/index.htm
-  upload: static/index.htm
+  static_files: genfiles/index.htm
+  upload: genfiles/index.htm
 
 - url: /api-1/.*
   script: snip.main.application
 
-- url: /
-  static_dir: static/
+- url: /.*
+  static_dir: genfiles

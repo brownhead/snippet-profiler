@@ -55,3 +55,9 @@ target/
 
 # Virtualenv
 venv/
+
+# Genfiles
+src/genfiles/
+
+# Node
+node_modules/
